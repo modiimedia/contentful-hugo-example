@@ -1,0 +1,6 @@
+repeatableTypes:
+- id: post
+  directory: /content/post/
+  fileExtension: md
+- id: gallery
+  directory: /content/gallery/
