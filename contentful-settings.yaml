@@ -1,10 +1,11 @@
 singleTypes:
-- id: post
-  directory: /content/
+    - id: post
+      directory: /content/
+      fileName: home
 
 repeatableTypes:
-- id: post
-  directory: /content/post/
-  fileExtension: md
-- id: gallery
-  directory: /content/gallery/
+    - id: post
+      directory: /content/post/
+      fileExtension: md
+    - id: gallery
+      directory: /content/gallery/
