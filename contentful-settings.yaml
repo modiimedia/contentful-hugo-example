@@ -1,3 +1,7 @@
+singleTypes:
+- id: post
+  directory: /content/
+
 repeatableTypes:
 - id: post
   directory: /content/post/
