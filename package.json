@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "contentful-hugo": "^1.9.1"
+    "contentful-hugo": "^1.9.2"
   }
 }
