@@ -1,5 +1,7 @@
-{{ define "main" }}
-    {{ range .Pages }}
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{ end }}
-{{ end }}
+{{- define "main" -}}
+    <div class="container">
+        {{- range .Pages -}}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- end -}}
+    </div>
+{{- end -}}

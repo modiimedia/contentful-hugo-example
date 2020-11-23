@@ -2,3 +2,5 @@
 public
 content
 node_modules
+assets/sass/_libs
+resources

@@ -5,13 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "contentful-hugo && hugo server",
-    "prebuild": "contentful-hugo",
-    "build": "hugo --minify"
+    "start": "npm run node-scripts && contentful-hugo && hugo server --disableFastRender",
+    "prebuild": "npm run node-scripts && contentful-hugo",
+    "build": "hugo --minify",
+    "node-scripts": "node node-scripts/bulma"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "contentful-hugo": "^1.9.2"
+    "bulma": "^0.9.1",
+    "contentful-hugo": "^1.9.4",
+    "fs-extra": "^9.0.1",
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/prettier": "^2.1.5",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.9",
+    "prettier": "^2.2.0",
+    "prettier-plugin-go-template": "0.0.10"
   }
 }

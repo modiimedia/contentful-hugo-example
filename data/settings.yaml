@@ -1,0 +1,14 @@
+updated: "2020-11-23T07:07:08.423Z"
+createdAt: "2020-11-23T03:18:51.739Z"
+date: "2020-11-23T03:18:51.739Z"
+name: "Settings Version 1.0"
+seoFields:
+  id: "7zqULaUrTivo2mWyWxzHuv"
+  contentType: "seoFields"
+mainNavigation:
+  - id: "6QfzDOg7ER4S2OHHPs3wX4"
+    contentType: "navigationLink"
+  - id: "v9Zffcew0gMjDOnjNiODf"
+    contentType: "navigationLink"
+  - id: "59yOD8GvaYRD3hFFGbNBJd"
+    contentType: "navigationDropdown"

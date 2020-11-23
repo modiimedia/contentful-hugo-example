@@ -1,0 +1,21 @@
+<header class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+    <div class="navbar-brand">
+        <a href="/" class="navbar-item is-uppercase has-text-weight-bold is-size-5">
+            Contentful Hugo
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            {{ range $.Site.Data.settings.mainNavigation }}
+                {{ if eq .contentType "navigationDropdown" }}
+                    {{ partial "navbar-dropdown" (dict "Site" $.Site "id" .id) }}
+                {{ else if eq .contentType "navigationLink" }}
+                    {{ partial "navbar-link" (dict "Site" $.Site "id" .id) }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+    </div>
+</header>

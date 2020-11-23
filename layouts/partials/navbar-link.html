@@ -1,0 +1,16 @@
+{{ with .Site.GetPage .id }}
+    {{ $label := .Params.name }}
+    {{ $url := "" }}
+    {{ if eq .Params.type "linked section" }}
+        {{ $url = .Params.linkedSection }}
+    {{ end }}
+    {{ if eq .Params.type "linked page" }}
+        {{ with .Site.GetPage .Params.linkedPage.id }}
+            {{ $url = .RelPermalink }}
+        {{ end }}
+    {{ end }}
+    {{ if eq .Params.type "custom url" }}
+        {{ $url = .Params.customUrl }}
+    {{ end }}
+    <a href="{{ $url }}" class="navbar-item">{{ $label }}</a>
+{{ end }}

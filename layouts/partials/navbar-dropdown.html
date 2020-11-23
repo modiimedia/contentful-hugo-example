@@ -1,0 +1,11 @@
+{{ $Site := .Site }}
+{{ with .Site.GetPage (print "_navigationDropdowns/" .id) }}
+<div class="navbar-item has-dropdown is-hoverable">
+    <div class="navbar-link">{{ .Params.name }}</div>
+    <div class="navbar-dropdown is-boxed">
+        {{ range .Params.navigationLinks }}
+            {{ partial "navbar-link" (dict "Site" $Site "id" .id) }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
